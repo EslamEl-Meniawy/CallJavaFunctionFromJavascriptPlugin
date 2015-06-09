@@ -1,0 +1,31 @@
+<!-- 
+~ @Author: Eslam El-Meniawy
+~ @Date: 2015-06-09 21:26:36
+~ @Last Modified by: eslam
+~ @Last Modified time: 2015-06-09 21:38:11
+~
+~ Dear maintainer:
+~ When I wrote this, only God and I understood what I was doing
+~ Now, God only knows
+~ So, good luck maintaining the code :D
+-->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="elmeniawy.eslam.notificationsplugin" version="0.0.1">
+	<name>CallJavaFunctionFromJavascriptPlugin</name>
+	<description>This plugin is intented to call a Java function from Javascript to do some native work</description>
+	<author>Eslam El-Meniawy</author>
+	<keywords>cordova,android,java,javascript</keywords>
+	<asset src="www/CallJavaFunctionFromJavascriptPlugin.js" target="js/CallJavaFunctionFromJavascriptPlugin.js"/>
+	<js-module src="www/CallJavaFunctionFromJavascriptPlugin.js" name="CallJavaFunctionFromJavascriptPlugin">
+		<clobbers target="CallJavaFunctionFromJavascriptPlugin" />
+	</js-module>
+	<platform name="android">
+		<config-file target="res/xml/config.xml" parent="/*">
+			<feature name="CallJavaFunctionFromJavascriptPlugin">
+				<param name="android-package" value="elmeniawy.eslam.plugin.CallJavaFunctionFromJavascriptPlugin"/>
+			</feature>
+		</config-file>
+		<source-file src="src/android/CallJavaFunctionFromJavascriptPlugin.java" target-dir="src/elmeniawy/eslam/plugin/"/>
+	</platform>
+</plugin>
