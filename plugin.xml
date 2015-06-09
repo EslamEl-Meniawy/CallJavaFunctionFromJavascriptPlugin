@@ -11,7 +11,7 @@
 -->
 
 <?xml version="1.0" encoding="UTF-8"?>
-<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="elmeniawy.eslam.notificationsplugin" version="0.0.1">
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="elmeniawy.eslam.cjfjsplugin" version="0.0.1">
 	<name>CallJavaFunctionFromJavascriptPlugin</name>
 	<description>This plugin is intented to call a Java function from Javascript to do some native work</description>
 	<author>Eslam El-Meniawy</author>
